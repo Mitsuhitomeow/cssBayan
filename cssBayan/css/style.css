@@ -15,6 +15,7 @@ body {
 .header {
   margin-top: 5rem;
   color: black;
+  padding: 0 0.5rem;
   border-bottom: 0.07rem solid #ccc;
 }
 
@@ -29,7 +30,10 @@ body {
 .item-input {
   width: 0;
   height: 0;
+  -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
+  position: absolute;
 }
 
 .item {
@@ -39,18 +43,40 @@ body {
   border-bottom: 0.0625rem solid #ccc;
 }
 
+.images {
+  display: flex;
+  justify-content: center;
+}
 .item-text {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  padding: 0 0.5rem;
 }
 
 
 .image-mem {
-  display: none;
+  object-fit: contain;
+  width: 15rem;
+  /* display: none; */
+  margin-bottom: 2rem;
 }
 
 .svg-plus {
   width: 1rem;
+  transition: all 0.5s ease;
+  /* display: none; */
 }
 
+
+
+/* hover active*/
+.accordion:hover {
+  color: black;
+}
+
+.item:hover .svg-plus {
+  transform: rotate(45deg);
+}
+
+/* checked */
