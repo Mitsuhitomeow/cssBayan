@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  background: blanchedalmond;
+  color: blue;
+}
+
+
+
+.header {
+  margin-top: 5rem;
+  color: black;
+  border-bottom: 0.07rem solid #ccc;
+}
+
+.accordion {
+  max-width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.item-input {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  border-bottom: 0.0625rem solid #ccc;
+}
+
+.item-text {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+.image-mem {
+  display: none;
+}
+
+.svg-plus {
+  width: 1rem;
+}
+
