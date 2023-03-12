@@ -118,7 +118,7 @@ input[type="radio"] {
 
   /* при наведении на лэйбл, появляются мемы,
   но при наведении на него, сами мемы прячутся */
-  label:hover~.images {
+  label:hover ~ .images {
     max-height: 30rem;
   }
 
@@ -139,6 +139,16 @@ input[type="radio"] {
     max-width: 1rem;
   }
 
+  /* при нажатии, мем остается открытым */
+  .item-input:checked ~ .images {
+    max-height: 30rem;
+  }
+
+  /* при нажатии на лейбел, крестик остается повернутым */
+  .item-input:checked + label .svg-plus {
+    transform: rotate(45deg);
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -149,6 +159,16 @@ input[type="radio"] {
 
   .svg-plus {
     max-width: 1rem;
+  }
+
+  /* при нажатии, мем остается открытым */
+  .item-input:checked ~ .images {
+    max-height: 30rem;
+  }
+
+  /* при нажатии на лейбел, крестик остается повернутым */
+  .item-input:checked + label .svg-plus {
+    transform: rotate(45deg);
   }
 
 }
