@@ -70,63 +70,63 @@ input[type="radio"] {
 
 
 
-/*/////////////////////
-//hover active images//
-/////////////////////*/
 
-
-/* меняет цвет  при наведении на зону аккордеона */
-.accordion:hover {
-  color: black;
-}
-
-/* при наведении появляются крестики */
-.accordion:hover .svg-plus {
-  max-width: 1rem;
-}
-
-/* при наведении на блок крестики вращаются */
-.item:hover .svg-plus {
-  transform: rotate(45deg);
-}
-
-/* при наведении на лэйбл, появляются мемы,
-  но при наведении на него, сами мемы прячутся */
-label:hover~.images {
-  max-height: 30rem;
-}
-
-/*эфект hover остается, если наводится на мем  */
-.images:hover {
-  max-height: 30rem;
-}
-
-
-
-/*/////////
-//checked//
-/////////*/
+/*///////////
+///checked///
+///////////*/
 
 
 /* при нажатии, мем остается открытым */
-.item-input:checked ~ .images {
+.item-input:checked~.images {
   max-height: 30rem;
 }
 
 /* при нажатии на лейбел, крестик остается повернутым */
-.item-input:checked + label .svg-plus {
+.item-input:checked+label .svg-plus {
   transform: rotate(45deg);
 }
 
-/*///////
-//media//
-///////*/
+/*/////////
+///media///
+/////////*/
 
 
 @media (max-width: 1920px) {
   html {
     font-size: 90%;
   }
+
+  /*//////////////////////////////////
+  ///hover active images in desktop///
+  //////////////////////////////////*/
+
+
+  /* меняет цвет  при наведении на зону аккордеона */
+  .accordion:hover {
+    color: black;
+  }
+
+  /* при наведении появляются крестики */
+  .accordion:hover .svg-plus {
+    max-width: 1rem;
+  }
+
+  /* при наведении на блок крестики вращаются */
+  .item:hover .svg-plus {
+    transform: rotate(45deg);
+  }
+
+  /* при наведении на лэйбл, появляются мемы,
+  но при наведении на него, сами мемы прячутся */
+  label:hover~.images {
+    max-height: 30rem;
+  }
+
+  /*эфект hover остается, если наводится на мем  */
+  .images:hover {
+    max-height: 30rem;
+  }
+
 }
 
 @media (max-width: 820px) {
