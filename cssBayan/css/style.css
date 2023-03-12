@@ -96,14 +96,9 @@ input[type="radio"] {
 ///media///
 /////////*/
 
-@media (max-width: 1920px) {
+@media (hover:hover) {
 
-  html {
-    font-size: 90%;
-  }
-
-
-  /*//////////////////////////////////
+   /*//////////////////////////////////
   ///hover active images in desktop///
   //////////////////////////////////*/
 
@@ -131,6 +126,14 @@ input[type="radio"] {
   /*эфект hover остается, если наводится на мем  */
   .images:hover {
     max-height: 30rem;
+  }
+
+}
+
+@media (max-width: 1920px) {
+
+  html {
+    font-size: 90%;
   }
 
 }
