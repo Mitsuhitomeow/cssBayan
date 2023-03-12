@@ -5,7 +5,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   background: blanchedalmond;
   color: blue;
 }
@@ -20,7 +21,7 @@ body {
 }
 
 .accordion {
-  max-width: 25rem;
+  max-width: 30rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -30,8 +31,6 @@ body {
 .item-input {
   width: 0;
   height: 0;
-  -webkit-appearance: none;
-  appearance: none;
   cursor: pointer;
   position: absolute;
 }
@@ -46,6 +45,8 @@ body {
 .images {
   display: flex;
   justify-content: center;
+  max-height: 0;
+  transition: linear 0.5s;
 }
 .item-text {
   display: flex;
@@ -54,25 +55,36 @@ body {
   padding: 0 0.5rem;
 }
 
-
 .image-mem {
   object-fit: contain;
-  width: 15rem;
+  width: 20rem;
   /* display: none; */
   margin-bottom: 2rem;
 }
 
 .svg-plus {
-  width: 1rem;
+  max-width: 0;
   transition: all 0.5s ease;
   /* display: none; */
 }
 
 
 
-/* hover active*/
+/* hover active images*/
 .accordion:hover {
   color: black;
+}
+
+.accordion:hover  .svg-plus {
+  max-width: 1rem;
+}
+
+.images:hover {
+  max-height: 30rem;
+}
+
+label:hover ~ .images {
+  max-height: 30rem;
 }
 
 .item:hover .svg-plus {
@@ -80,3 +92,8 @@ body {
 }
 
 /* checked */
+
+.item-input:checked ~ .images{
+
+  max-height: 30rem;
+}
