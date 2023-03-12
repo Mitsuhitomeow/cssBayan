@@ -72,34 +72,54 @@ body {
 
 
 /* hover active images*/
-@media (hover: hover) {
-  .accordion:hover {
-    color: black;
-  }
+.accordion:hover {
+  color: black;
+}
 
-  .accordion:hover .svg-plus {
-    max-width: 1rem;
-  }
+.accordion:hover .svg-plus {
+  max-width: 1rem;
+}
 
-  .images:hover {
-    max-height: 30rem;
-  }
+.images:hover {
+  max-height: 30rem;
+}
 
-  label:hover~.images {
-    max-height: 30rem;
-  }
+label:hover~.images {
+  max-height: 30rem;
+}
 
-  .item:hover .svg-plus {
-    transform: rotate(45deg);
-  }
+.item:hover .svg-plus {
+  transform: rotate(45deg);
+}
 
-  /* checked */
-  .item:checked+.svg-plus {
-    transform: rotate(45deg);
-  }
+/* checked */
+.item:checked+.svg-plus {
+  transform: rotate(45deg);
+}
 
-  .item-input:checked~.images {
-    max-height: 30rem;
-  }
+.item-input:checked~.images {
+  max-height: 30rem;
+}
 
+
+
+/* media */
+
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
 }
