@@ -13,6 +13,10 @@ body {
 
 input[type="radio"] {
   max-height: 0;
+  max-width: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .accordion {
@@ -86,20 +90,22 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
+
+
 /*/////////
 ///media///
 /////////*/
 
-
 @media (max-width: 1920px) {
+
   html {
     font-size: 90%;
   }
 
+
   /*//////////////////////////////////
   ///hover active images in desktop///
   //////////////////////////////////*/
-
 
   /* меняет цвет  при наведении на зону аккордеона */
   .accordion:hover {
@@ -139,16 +145,6 @@ input[type="radio"] {
     max-width: 1rem;
   }
 
-  /* при нажатии, мем остается открытым */
-  .item-input:checked ~ .images {
-    max-height: 30rem;
-  }
-
-  /* при нажатии на лейбел, крестик остается повернутым */
-  .item-input:checked + label .svg-plus {
-    transform: rotate(45deg);
-  }
-
 }
 
 @media (max-width: 320px) {
@@ -159,16 +155,6 @@ input[type="radio"] {
 
   .svg-plus {
     max-width: 1rem;
-  }
-
-  /* при нажатии, мем остается открытым */
-  .item-input:checked ~ .images {
-    max-height: 30rem;
-  }
-
-  /* при нажатии на лейбел, крестик остается повернутым */
-  .item-input:checked + label .svg-plus {
-    transform: rotate(45deg);
   }
 
 }
