@@ -55,7 +55,6 @@ input[type="radio"] {
 .image-mem {
   object-fit: contain;
   width: 20rem;
-  /* display: none; */
   margin-bottom: 2rem;
 }
 
@@ -69,7 +68,6 @@ input[type="radio"] {
 .svg-plus {
   max-width: 0;
   transition: all 0.5s ease;
-  /* display: none; */
 }
 
 
